@@ -1,0 +1,29 @@
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  width: 10%;
+  background: url("images/coverImage.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+.content {
+  width: 20%;
+  height: 50%;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.content > h1 {
+font-size: 80px;
+  padding: 2px 0;
+  
+}
+.content > p {
+  padding: 5px 0;
+  font-size: 25px;
+}
