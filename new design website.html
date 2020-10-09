@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>before and after pseudoselectors</title>
+    <style>
+        body{
+             
+
+            margin:0px;
+            padding:0px;
+            background-color: black;
+            color: white;
+        }
+        body::before{
+/* important technique below */
+             background-image: url('https://images.unsplash.com/photo-1533204515132-035bc8d4128c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80');
+             position: absolute;
+             content:"";
+             width:100vw;
+             height:99vh;
+             z-index: -1;
+             opacity: 0.6;
+             background-size: cover;
+
+
+             
+        }
+        
+        .navigation{
+            display:flex;
+            font-size: x-large;
+            padding:0px;
+            margin:0px;
+        }
+        section{
+            /* border:2px solid red; */
+            align-items: center;
+            height:50vh;
+            justify-content: center;
+            text-align: center;
+            display:flex;
+            flex-direction: column;
+            margin: 0 auto;
+            width:70vw;
+            
+        }
+        li{
+            list-style: none;
+            padding:40px 45px;
+        }
+        h3{
+            font-size: 3rem;
+        }
+        /* section::before{
+            content:"this is a content";
+        }
+         */
+
+    </style>
+</head>
+<body>
+            <header>
+                <nav class="navbar">
+                    <ul class="navigation">
+                        <li class="item">home</li>
+                        <li class="item">about</li>
+                        <li class="item">services</li>
+                        <li class="item">contact us     </li>
+                        
+                    </ul>
+                </nav>
+            </header>
+                    <section>
+                        <h3>WELCOME TO CODING WORLD</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit laborum, quos vero incidunt nobis doloribus nam eum laudantium pariatur at blanditiis ea, eveniet amet excepturi voluptates eligendi dolore repudiandae illum ratione. Nulla, voluptatum omnis!</p>
+                    </section>            <hr>   
+        </body>
+        </html>
